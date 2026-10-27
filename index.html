@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🍴 Food Delivery</h1>
+
+    <button onclick="showCart()">
+        🛒 Cart (<span id="cartCount">0</span>)
+    </button>
+</header>
+
+<div class="container">
+
+    <div id="restaurants">
+        <h2>Restaurants</h2>
+
+        <div class="restaurant">
+            <h3>🍔 Urban Bites</h3>
+            <p>Burgers, Pizza and More</p>
+            <button onclick="showFoods('Urban Bites')">
+                View Foods
+            </button>
+        </div>
+
+        <div class="restaurant">
+            <h3>🍜 Tasty Corner</h3>
+            <p>Delicious Indian Foods</p>
+            <button onclick="showFoods('Tasty Corner')">
+                View Foods
+            </button>
+        </div>
+    </div>
+
+    <div id="foods">
+        <h2 id="restaurantName"></h2>
+        <div id="foodList" class="foodList"></div>
+        <br>
+        <button onclick="goHome()">
+            ⬅ Back to Restaurants
+        </button>
+    </div>
+
+    <div id="cart">
+        <h2>🛒 Your Cart</h2>
+        <div id="cartItems"></div>
+
+        <button onclick="buyNow()">Buy Now</button>
+        <button onclick="goHome()">Continue Shopping</button>
+
+        <p id="message"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+ 
